@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>JavaScript Class Example</title> 
+    </head>
+     <body> 
+      <h1>JavaScript Class Example</h1> 
+      <div id="output"></div>
+       <script> 
+        class Person { 
+          constructor(firstName, lastName, age) { 
+            this.firstName = firstName;
+             this.lastName = lastName; 
+             this.age = age; } 
+              getFullName() {
+                 return `${this.firstName} ${this.lastName}`;
+                 } 
+                 // Method to get a greeting message
+                   getGreeting() {
+                     return `Hello, my name is ${this.getFullName()} and I am ${this.age} years old.`; } }
+                      // Create an instance of the class 
+                       const person = new Person('John', 'Doe', 30); 
+                       // Display the greeting message in the HTML
+                        const outputDiv = document.getElementById('output');
+                         outputDiv.textContent = person.getGreeting();
+ </script> 
+ </body>
+ </html>
